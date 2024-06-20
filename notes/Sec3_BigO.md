@@ -1,11 +1,4 @@
-# BigO
-
-## Reference
-https://zerotomastery.io/cheatsheets/big-o-cheat-sheet/?utm_source=udemy&utm_medium=coursecontent
-
-https://www.bigocheatsheet.com/
-
-https://zerotomastery.io/
+# Section 3. BigO
 
 ## What is good code?
 1. Readable
@@ -95,3 +88,10 @@ arrayOfHiNTimes(6);
 ```
 
 The space complexity of above code is ... O(n)
+
+## Reference
+https://zerotomastery.io/cheatsheets/big-o-cheat-sheet/?utm_source=udemy&utm_medium=coursecontent
+
+https://www.bigocheatsheet.com/
+
+https://zerotomastery.io/
