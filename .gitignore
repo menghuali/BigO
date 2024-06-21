@@ -2,3 +2,4 @@
 bin
 temp
 *.bkp
+.DS_Store

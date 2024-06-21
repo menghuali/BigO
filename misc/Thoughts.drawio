@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-06-21T02:01:20.315Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="OxX5H6bbo6C3qBwjKk7V" version="24.5.3" type="device" pages="2">
+<mxfile host="Electron" modified="2024-06-21T02:27:25.810Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="IsMKRqvIbBZNU3qfxLWZ" version="24.5.3" type="device">
   <diagram name="MaximumSubarray" id="nT-vpXsCs1bK4w2tRn-D">
     <mxGraphModel dx="1026" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -62,6 +62,19 @@
         </mxCell>
         <mxCell id="H8Bt9X8JEDTLtaWw7Q8g-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H8Bt9X8JEDTLtaWw7Q8g-28" target="H8Bt9X8JEDTLtaWw7Q8g-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7WPZfVM5br1iF4nFnGgN-1" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="H8Bt9X8JEDTLtaWw7Q8g-31">
+          <mxGeometry x="-0.16" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7WPZfVM5br1iF4nFnGgN-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H8Bt9X8JEDTLtaWw7Q8g-28" target="H8Bt9X8JEDTLtaWw7Q8g-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7WPZfVM5br1iF4nFnGgN-3" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="7WPZfVM5br1iF4nFnGgN-2">
+          <mxGeometry x="-0.7391" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="H8Bt9X8JEDTLtaWw7Q8g-28" value="if tempSum &amp;gt; sum" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="620" width="80" height="80" as="geometry" />
@@ -163,14 +176,6 @@
         <mxCell id="H8Bt9X8JEDTLtaWw7Q8g-59" value="&lt;span style=&quot;&quot;&gt;sum=nums[0]&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;tempSum=num[0]&lt;/span&gt;&lt;div style=&quot;&quot;&gt;i = 1&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="325" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="RCoDvqrYqgbAU-kAeVzZ" name="Page-2">
-    <mxGraphModel dx="1026" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
