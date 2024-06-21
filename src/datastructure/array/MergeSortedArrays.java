@@ -1,7 +1,5 @@
 package datastructure.array;
 
-import java.util.*;
-
 /**
  * Merge two sorted integer arrays. For example: merge [0, 3, 4, 31] and [4, 6,
  * 30]. The result shall be [0, 3, 4, 4, 6, 30, 31]

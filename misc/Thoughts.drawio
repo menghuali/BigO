@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-06-21T02:00:26.637Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="5craXbeY0bLogqT2Vd6O" version="24.5.3" type="device">
+<mxfile host="Electron" modified="2024-06-21T02:01:20.315Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="OxX5H6bbo6C3qBwjKk7V" version="24.5.3" type="device" pages="2">
   <diagram name="MaximumSubarray" id="nT-vpXsCs1bK4w2tRn-D">
     <mxGraphModel dx="1026" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -163,6 +163,14 @@
         <mxCell id="H8Bt9X8JEDTLtaWw7Q8g-59" value="&lt;span style=&quot;&quot;&gt;sum=nums[0]&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;tempSum=num[0]&lt;/span&gt;&lt;div style=&quot;&quot;&gt;i = 1&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="325" y="100" width="120" height="60" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="RCoDvqrYqgbAU-kAeVzZ" name="Page-2">
+    <mxGraphModel dx="1026" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
