@@ -54,8 +54,17 @@ public class MaximumSubarray {
       int sum = nums[0];
       int max = nums[0];
       for (int i = 1; i < nums.length; i++) {
+         // if num[i] is bigger, meams sum < 0 and num[i] > sum.
+         // if num[i] + sum is bigger, means sum > 0.
          sum = Math.max(nums[i], sum + nums[i]);
          max = Math.max(max, sum);
+         // [-2,1,-3,4,-1,2,1,-5,4]
+         // -2 :                       :  sum = -2, max=-2
+         // 1  :  max(1, -2 + 1) = 1   :  sum = 1, max = 1
+         // -3 :  max(-3, 1 - 3) = -2  :  sum = -2, max = 1
+         // 4  :  max(4, -2 + 4) = 4   :  sum = 4, max = 4
+         // -1 :  max(-1, 4 - 1) = 3   :  sum = 3, max = 4
+         // 2  :  max(2, 3 + 2) = 5    :  sum = 5, max = 5
       }
       return max;
    }
