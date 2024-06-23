@@ -1,4 +1,4 @@
-package datastructure.array;
+package datastructure.sec6_array;
 
 /**
  * Create a function that reverses a string. For example, 'Hello, World!' should

@@ -1,4 +1,4 @@
-package datastructure.array;
+package datastructure.sec6_array;
 
 /**
  * Merge two sorted integer arrays. For example: merge [0, 3, 4, 31] and [4, 6,

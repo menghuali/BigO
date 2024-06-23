@@ -1,4 +1,4 @@
-package datastructure.array;
+package datastructure.sec6_array;
 
 /**
  * Given an integer array nums, move all 0's to the end of it while maintaining

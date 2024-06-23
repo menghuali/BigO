@@ -1,4 +1,4 @@
-package datastructure.array;
+package datastructure.sec6_array;
 
 import java.util.HashSet;
 

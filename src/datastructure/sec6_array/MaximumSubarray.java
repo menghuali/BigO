@@ -1,4 +1,4 @@
-package datastructure.array;
+package datastructure.sec6_array;
 
 /**
  * Given an integer array nums, find the subarray with the largest sum, and
