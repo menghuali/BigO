@@ -12,6 +12,7 @@ There're are a lot hash function. The hash function for hash table should be ver
 * access: O(1)
 * delete: O(1)
 * search: O(1)
+* push: O(n)
 
 #### Limitations of Hash Tables: Collision
 
