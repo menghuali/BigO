@@ -14,6 +14,15 @@ There're are a lot hash function. The hash function for hash table should be ver
 * search: O(1)
 * push: O(n)
 
+__Pros__
+* Fast lookups
+* Fast insertion
+* Flexible size
+
+__Cons__
+* Unordered
+* Slow insertion in case of key collision.
+
 #### Limitations of Hash Tables: Collision
 
 A hash table collision occurs when two different keys hash to the same index in a hash table. Hash tables use a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. Here’s a more detailed explanation:
