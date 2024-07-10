@@ -41,6 +41,50 @@ __Cons__
 ### Balanced vs Unbalanced BST
 https://opendatastructures.org/versions/edition-0.1d/ods-java/node37.html
 
+#### AVL Tree
+https://en.wikipedia.org/wiki/AVL_tree
+
+https://medium.com/basecs/the-little-avl-tree-that-could-86a3cae410c7
+
+#### Red-black Tree
+https://en.wikipedia.org/wiki/Red%E2%80%93black_tree
+
+## Binary Heap
+https://en.wikipedia.org/wiki/Binary_heap
+* Max heap: a node is greater than its lower nodes
+* Min heap: a node is less than its lower nodes
+
+Visualized: https://visualgo.net/en/heap?slide=1
+
+Big O:
+* search: O(N)
+* insert: O(log N)
+* delete: O(log N)
+
+Use cases:
+* __Priority queue__: https://en.wikipedia.org/wiki/Priority_queue
+* Comparision, e.g. find the transactions greater than 100 dollors.
+* Sorting
+
+Pros:
+* No need to rebalance
+* Better than O(n)
+* Priority
+* Flexible size
+* Fast inert
+* Find max/min: O(n)
+
+Cons:
+* Slow lookup
+
+## Trie
+https://en.wikipedia.org/wiki/Trie
+
+Solve words problems.
+
+Big O:
+* O(length of word)
+
 ## Reference
 Mind Tree: https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link
 
