@@ -21,5 +21,25 @@ In software, a stack overflow occurs if the call stack pointer exceeds the stack
 2. Identify the recursive case
 3. Get closer and closer and returm when needed. Usually you have to two returns
 
- 
+### When to use Recursion?
+1. When use a tree or convert something into a tree, consider recursion
+   * Divide a problem into a number of sub-problems.
+   * Each instance of sub-problem is identical in nature (aka the way to resolve them is always the same).
+   * The solutions of each sub-problem can be combined to solve the problem at hand.
+2. Divide and conquer using recursion
 
+**Pros:**
+* DRY
+* Readability
+
+**Cons:**
+* Large stack
+* Time complexity
+
+
+## Reference
+Taill call optimization: https://2ality.com/2015/06/tail-call-optimization.html
+
+Tail call: https://en.wikipedia.org/wiki/Tail_call
+
+Samples of using recursion: https://stackoverflow.com/questions/105838/real-world-examples-of-recursion

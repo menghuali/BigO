@@ -1,9 +1,10 @@
-package algorithm.recursion;
+package algorithm.sec12_recursion;
 
 import java.util.function.Function;
 
 public class Factorial {
 
+    // O(n)
     public static int recursive(int number) {
         if (number <= 2) {
             return number;
@@ -12,6 +13,7 @@ public class Factorial {
         }
     }
 
+    // O(n)
     public static int iterative(int number) {
         int factorial = number;
         while (--number > 1) {
