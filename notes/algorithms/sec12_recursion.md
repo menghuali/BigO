@@ -1,4 +1,4 @@
-# Section 12. Recursion
+# Section 12. Algorithm: Recursion
 https://en.wikipedia.org/wiki/Recursion_(computer_science)
 
 ## Concepts
@@ -29,12 +29,13 @@ In software, a stack overflow occurs if the call stack pointer exceeds the stack
 2. Divide and conquer using recursion
 
 **Pros:**
-* DRY
+* DRY (avoid repeating problem solution)
 * Readability
 
 **Cons:**
 * Large stack
 * Time complexity
+* Stack overflow
 
 
 ## Reference
