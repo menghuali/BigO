@@ -56,6 +56,58 @@ Time complexity: O(n log(n))
 
 Space complexity: O(n)
 
+## Heapsort
+https://brilliant.org/wiki/heap-sort/
+
+https://en.wikipedia.org/wiki/Heapsort
+
+https://www.youtube.com/watch?v=MtQL_ll5KhQ
+
+## How to choose algorithms?
+* Insertion Sort : a few items and most sorted
+* Bubble Sort: never
+* Selection Sort: never
+* Merge Sort: if memory is not a concern. 
+* Quicksort: if you don't worry about the worst case. Otherwise choose Merge Sort.
+* Heap Sort: if meory is a real concern
+
+## Non-Comparison Sort
+https://pages.cs.wisc.edu/~paton/readings/Old/fall08/LINEAR-SORTS.html
+
+
+### Radix Sort
+https://brilliant.org/wiki/radix-sort/
+
+https://www.cs.usfca.edu/~galles/visualization/RadixSort.html
+
+### Counting Sort
+
+## Algorithm Exercises
+1. Sort 10 schools around your house by distance.<br>
+   *insertion sort* because not alot of items
+   
+2. eBay sorts listings by the current Bid amount.<br>
+   *radix or counting* because items are all integers.
+   
+3. Sport scores on ESPN
+   *quick sort*
+
+4. Massive database (can't fit all into memory) needs to sort through past year's user data<br>
+   *merge sort*
+
+5. Almost sorted Udemy review data needs to update and add 2 new reviews<br>
+   *insertion sort*
+
+6. Temperature Records for the past 50 years in Canada<br>
+   *radix or counting* if temperatures are itneger<br>
+   *quick sort* if temperatures have decimals
+
+7. Large user name database needs to be sorted. Data is very random<br>
+   *quicksort*
+
+8. You want to teach sorting for the first time<br>
+   *bubble sort and selection sort*
+
 ## Reference
 Sorting algorithms: https://en.wikipedia.org/wiki/Sorting_algorithm
 
