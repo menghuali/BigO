@@ -1,5 +1,9 @@
 package datastructure.sec10_tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.function.Function;
+
 public class BinarySearchTree {
 
     private Node root;
@@ -135,6 +139,50 @@ public class BinarySearchTree {
         System.out.println(root);
     }
 
+    public Node BFS(int value) {
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+        Node node;
+        while ((node = queue.poll()) != null) {
+            if (node.getValue() == value) {
+                return node;
+            } else {
+                if (node.getLeft() != null)
+                    queue.add(node.getLeft());
+                if (node.getRight() != null)
+                    queue.add(node.getRight());
+            }
+        }
+        return null;
+    }
+
+    public Node recursiveBFS(int value) {
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+        return recursiveBFS(value, queue);
+    }
+
+    private Node recursiveBFS(int value, Queue<Node> queue) {
+        Node node = queue.poll();
+        if (node == null)
+            return null;
+
+        if (node.getValue() == value)
+            return node;
+
+        if (node.getLeft() != null)
+            queue.add(node.getLeft());
+        if (node.getRight() != null)
+            queue.add(node.getRight());
+        return recursiveBFS(value, queue);
+    }
+
+    public Node search(Function<Integer, Node> function, int value) {
+        Node node = function.apply(value);
+        System.out.println(node);
+        return node;
+    }
+
     public static void main(String[] args) {
         BinarySearchTree bst = new BinarySearchTree();
         bst.insert(9);
@@ -143,14 +191,8 @@ public class BinarySearchTree {
         bst.insert(1);
         bst.insert(6);
         bst.insert(15);
-        bst.insert(13);
-        bst.insert(18);
         bst.insert(170);
-        bst.insert(100);
-        bst.insert(120);
-        bst.insert(110);
-        bst.insert(150);
-        bst.print();
-        bst.remove(20);
+
+        bst.search(bst::recursiveBFS, 20);
     }
 }
