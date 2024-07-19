@@ -1,8 +1,10 @@
 package datastructure.sec10_tree;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class BinarySearchTree {
 
@@ -176,6 +178,67 @@ public class BinarySearchTree {
             queue.add(node.getRight());
         return recursiveBFS(value, queue);
     }
+    // 9
+    // 4 20
+    // 1 6 15 170
+    // 1, 4, 6, 9, 15, 20, 170
+
+    public int[] inOrderTraverse() {
+        List<Integer> list = new LinkedList<>();
+        inOrderTraverse(root, list);
+        return list.stream().mapToInt(i -> i).toArray();
+    }
+
+    private void inOrderTraverse(Node node, List<Integer> list) {
+        if (node.getLeft() != null)
+            inOrderTraverse(node.getLeft(), list);
+        list.add(node.getValue());
+        if (node.getRight() != null)
+            inOrderTraverse(node.getRight(), list);
+    }
+
+    public int[] preOrderTraverse() {
+        List<Integer> list = new LinkedList<>();
+        preOrderTraverse(root, list);
+        return list.stream().mapToInt(i -> i).toArray();
+    }
+
+    private void preOrderTraverse(Node node, List<Integer> list) {
+        list.add(node.getValue());
+        if (node.getLeft() != null)
+            preOrderTraverse(node.getLeft(), list);
+        if (node.getRight() != null)
+            preOrderTraverse(node.getRight(), list);
+    }
+
+    public int[] postOrderTraverse() {
+        List<Integer> list = new LinkedList<>();
+        postOrderTraverse(root, list);
+        return list.stream().mapToInt(i -> i).toArray();
+    }
+
+    private void postOrderTraverse(Node node, List<Integer> list) {
+        if (node.getLeft() != null)
+            postOrderTraverse(node.getLeft(), list);
+        if (node.getRight() != null)
+            postOrderTraverse(node.getRight(), list);
+        list.add(node.getValue());
+    }
+
+    public int[] levelOrderTraverse() {
+        Queue<Node> queue = new LinkedList<>();
+        List<Integer> list = new LinkedList<>();
+        queue.add(root);
+        Node node;
+        while ((node = queue.poll()) != null) {
+            list.add(node.getValue());
+            if (node.getLeft() != null)
+                queue.add(node.getLeft());
+            if (node.getRight() != null)
+                queue.add(node.getRight());
+        }
+        return list.stream().mapToInt(i -> i).toArray();
+    }
 
     public Node search(Function<Integer, Node> function, int value) {
         Node node = function.apply(value);
@@ -183,7 +246,25 @@ public class BinarySearchTree {
         return node;
     }
 
+    public int[] traverse(Supplier<int[]> supplier) {
+        int[] array = supplier.get();
+        StringBuilder sb = new StringBuilder();
+        for (int i : array) {
+            sb.append(i).append(", ");
+        }
+        System.out.println(sb.toString());
+        return array;
+    }
+
     public static void main(String[] args) {
+        BinarySearchTree bst = buildTree();
+        bst.traverse(bst::inOrderTraverse);
+        bst.traverse(bst::preOrderTraverse);
+        bst.traverse(bst::postOrderTraverse);
+        bst.traverse(bst::levelOrderTraverse);
+    }
+
+    private static BinarySearchTree buildTree() {
         BinarySearchTree bst = new BinarySearchTree();
         bst.insert(9);
         bst.insert(4);
@@ -192,7 +273,6 @@ public class BinarySearchTree {
         bst.insert(6);
         bst.insert(15);
         bst.insert(170);
-
-        bst.search(bst::recursiveBFS, 20);
+        return bst;
     }
 }
