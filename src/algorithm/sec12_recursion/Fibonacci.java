@@ -34,7 +34,7 @@ public class Fibonacci {
 
     public static void main(String[] args) {
         fibonnaci(5, Fibonacci::iterative);
-        fibonnaci(5, Fibonacci::recursive); // much slower
+        fibonnaci(5, Fibonacci::recursive); // much slower when n >= 45
         
     }
 
