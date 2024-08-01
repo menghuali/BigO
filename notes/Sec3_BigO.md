@@ -7,7 +7,7 @@
 ### What is Scalable?
 Big O meatures the scalability and efficiency of your code. It shows the growth of operations as the number of elements grows. I meature how quickly the running time grows.
 
-![image](./misc/big_o_complexity_chart.png)
+![image](../misc/big_o_complexity_chart.png)
 
 
 #### Big O Notations
